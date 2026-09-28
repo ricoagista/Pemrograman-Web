@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Web</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Konfigurasi Tema -->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #2563eb;
+            --color-primary-dark: #1e40af;
+            --color-primary-light: #60a5fa;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="bg-primary text-white">
+        <nav class="max-w-6xl mx-auto px-6 py-4">
+
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+
+                <!-- Logo -->
+                <a href="#" class="text-xl font-bold">
+                    Modern Web
+                </a>
+
+                <!-- Navigation -->
+                <ul class="flex gap-6 text-sm font-medium">
+
+                    <li>
+                        <a href="#" class="hover:text-primary-light">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#cards" class="hover:text-primary-light">
+                            Content
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="hover:text-primary-light">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+        <section class="bg-blue-50 px-6 py-20">
+
+            <div class="max-w-6xl mx-auto text-center">
+
+                <h1 class="text-4xl md:text-5xl font-bold text-primary-dark mb-6">
+                    Learn Modern Web Development
+                </h1>
+
+                <p class="max-w-2xl mx-auto text-gray-600 text-lg mb-8">
+                    Pelajari dasar pengembangan website modern
+                    menggunakan HTML semantik dan Tailwind CSS.
+                </p>
+
+                <a
+                    href="#cards"
+                    class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark"
+                >
+                    Explore Content
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTENT SECTION
+        ========================== -->
+        <section id="cards" class="px-6 py-16">
+
+            <div class="max-w-6xl mx-auto">
+
+                <div class="text-center mb-10">
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Our Content
+                    </h2>
+
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Pelajari berbagai materi yang dapat membantu
+                        memahami dasar pengembangan website modern.
+                    </p>
+
+                </div>
+
+
+                <!-- CARD GRID -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+                    <!-- =========================
+                         CARD 1
+                    ========================== -->
+                    <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
+
+                        <img
+                            src="https://i.pinimg.com/736x/6c/3c/a8/6c3ca83375ea2a68ca1f3a6bc704f239.jpg"
+                            alt="Web Development"
+                            class="w-full h-auto object-cover"
+                        >
+
+                        <div class="p-6">
+
+                            <h3 class="text-xl font-bold text-primary-dark mb-3">
+                                MBG (My Bini Gweh)
+                            </h3>
+
+                            <p class="text-gray-600 leading-relaxed">
+                                Pelajari dasar pembuatan website mulai dari
+                                struktur HTML hingga penggunaan teknologi
+                                web modern.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         CARD 2
+                    ========================== -->
+                    <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
+
+                        <img
+                            src="https://i.pinimg.com/736x/e3/8e/c5/e38ec5cc93220e2ebc4314b816ad27ee.jpg"
+                            alt="Programming"
+                            class="w-full h-auto object-cover"
+                        >
+
+                        <div class="p-6">
+
+                            <h3 class="text-xl font-bold text-primary-dark mb-3">
+                                keliatan bgt tuh karbitnya 🤭
+                            </h3>
+
+                            <p class="text-gray-600 leading-relaxed">
+                                Bangun kemampuan pemrograman dengan memahami
+                                konsep dasar, logika, struktur kode, dan
+                                pemecahan masalah.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         CARD 3
+                    ========================== -->
+                    <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
+
+                        <img
+                            src="https://i.pinimg.com/736x/5a/6d/2d/5a6d2d7def21b3616a0a247205ae9891.jpg"
+                            alt="Modern Technology"
+                            class="w-full h-48 object-cover"
+                        >
+
+                        <div class="p-6">
+
+                            <h3 class="text-xl font-bold text-primary-dark mb-3">
+                                pergi kau suki😾
+                            </h3>
+
+                            <p class="text-gray-600 leading-relaxed">
+                                Kenali berbagai teknologi modern yang digunakan
+                                untuk membangun aplikasi web yang responsif
+                                dan mudah dikembangkan.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT FORM
+        ========================== -->
+        <section id="contact" class="bg-blue-50 px-6 py-16">
+
+            <div class="max-w-xl mx-auto">
+
+                <div class="text-center mb-8">
+
+                    <h2 class="text-3xl font-bold text-primary-dark mb-3">
+                        Contact Us
+                    </h2>
+
+                    <p class="text-gray-600">
+                        Kirim pesan melalui form berikut.
+                    </p>
+
+                </div>
+
+
+                <form class="bg-white rounded-xl shadow-md p-6">
+
+                    <!-- Nama -->
+                    <div class="mb-5">
+
+                        <label
+                            for="name"
+                            class="block text-sm font-medium mb-2"
+                        >
+                            Nama
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Masukkan nama"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="mb-5">
+
+                        <label
+                            for="email"
+                            class="block text-sm font-medium mb-2"
+                        >
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Masukkan email"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                        >
+
+                    </div>
+
+
+                    <!-- Pesan -->
+                    <div class="mb-5">
+
+                        <label
+                            for="message"
+                            class="block text-sm font-medium mb-2"
+                        >
+                            Pesan
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="4"
+                            placeholder="Masukkan pesan"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Button -->
+                    <button
+                        type="submit"
+                        class="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-primary-dark"
+                    >
+                        Kirim Pesan
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-primary-dark text-white">
+
+        <div class="max-w-6xl mx-auto px-6 py-6 text-center">
+
+            <p class="text-sm">
+                &copy; 2026 Modern Web. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+```
