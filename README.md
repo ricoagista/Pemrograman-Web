@@ -22,15 +22,15 @@ Pemrograman-Web/
 
 ## 📖 Daftar Modul
 
-| Modul | Topik | Materi |
-|-------|-------|--------|
-| [Modul 0](./modul_0/) | Setup | Instalasi tools & development environment |
-| [Modul 1](./modul_1/) | Fundamental Pemrograman Web Modern | HTML5 Semantik, Layouting (Flexbox & Grid), Tailwind CSS |
-| [Modul 2](./modul_2/) | JavaScript Fundamentals & DOM Manipulation | ES6+, DOM Manipulation, Event Handling, Fetch API |
-| [Modul 3](./modul_3/) | PHP Prosedural & PHP OOP | Sintaks PHP, Class, Object, Inheritance, Encapsulation |
-| [Modul 4](./modul_4/) | Laravel REST API CRUD, Eloquent ORM & Relationship | Routing, Controller, Eloquent ORM, Model Relationship |
-| [Modul 5](./modul_5/) | Autentikasi, Middleware & File Storage | JWT Authentication, Middleware, File Upload & Storage |
-| [Modul 6](./modul_6/) | Integrasi Frontend, Dokumentasi & Deployment | REST API Client Integration, API Docs (Swagger/Postman), Deployment |
+| Modul | Topik | Materi / File |
+|-------|-------|---------------|
+| [Modul 0](./modul_0/) | Setup | • `Modul 0 - Setup.pdf` |
+| [Modul 1](./modul_1/) | Fundamental Pemrograman Web Modern | • `Modul 1 - Fundamental Pemrograman Web Modern.pdf`<br>• [`Codelab/`](./modul_1/Codelab/) (`index.html`, assets) |
+| [Modul 2](./modul_2/) | JavaScript Fundamentals & DOM Manipulation | • `Modul 2 - Javascript Fundamentals & DOM Manipulation.pdf` |
+| [Modul 3](./modul_3/) | PHP Prosedural & PHP OOP | • `Modul 3 - PHP Prosedural & PHP OOP.pdf` |
+| [Modul 4](./modul_4/) | Laravel REST API CRUD, Eloquent ORM & Relationship | • `Modul 4 - Laravel REST API CRUD, Eloquent ORM & Relationship.pdf` |
+| [Modul 5](./modul_5/) | Autentikasi, Middleware & File Storage | • `Modul 5 - Autentikasi, Middleware & File Storage.pdf` |
+| [Modul 6](./modul_6/) | Integrasi Frontend, Dokumentasi & Deployment | • `Modul 6 - Integrasi Frontend, Dokumentasi & Deployment.pdf` |
 
 ---
 
