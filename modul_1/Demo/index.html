@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlipPlay - Platform Hiburan Digital Terpadu</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white text-[#1d1d1f] font-['SF_Pro_Text',system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',Roboto,sans-serif] antialiased min-h-screen flex flex-col selection:bg-[#0066cc] selection:text-white">
+  <!-- ponytail: Pure Apple design system from DESIGN.md via Tailwind arbitrary values; upgrade to theme tokens in build setup if modularity is needed. -->
+
+  <!-- 1. Header & Navigation (Global Nav Apple style: 44px pure black bar) -->
+  <header class="sticky top-0 z-50 bg-[#000000]/90 backdrop-blur-md border-b border-[#333333]">
+    <nav class="max-w-6xl mx-auto px-6 h-11 flex items-center justify-between">
+      <a href="#hero" class="text-[14px] font-semibold tracking-tight text-white hover:text-[#cccccc] transition">
+        FlipPlay
+      </a>
+      <div class="flex items-center gap-8 text-[12px] text-[#cccccc]">
+        <a href="#hero" class="hover:text-white transition">Home</a>
+        <a href="#fitur" class="hover:text-white transition">Fitur</a>
+        <a href="#kontak" class="hover:text-white transition">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-1">
+    <!-- 2. Hero Section (Product Tile Light: pure white canvas, tight tracking, 80px padding, system product drop-shadow) -->
+    <section id="hero" class="bg-white py-20 px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <p class="text-[14px] font-semibold text-[#0066cc] tracking-wide uppercase">
+            All-in-One Entertainment
+          </p>
+          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-semibold leading-[1.07] tracking-[-0.28px] text-[#1d1d1f]">
+            Streaming Anime, Drama, Manga, dan Light Novel dalam Satu Aplikasi
+          </h1>
+          <p class="text-[17px] text-[#7a7a7a] leading-[1.47] tracking-[-0.374px] max-w-xl">
+            FlipPlay menghadirkan pengalaman hiburan digital terpadu. Tonton, baca, dan jelajahi dunia favoritmu tanpa berpindah aplikasi.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <!-- button-primary: Action Blue pill, active:scale-95 -->
+            <a href="#fitur" class="inline-flex items-center justify-center bg-[#0066cc] hover:bg-[#0071e3] text-white text-[17px] font-normal px-[22px] py-[11px] rounded-full active:scale-95 transition">
+              Mulai Sekarang
+            </a>
+            <!-- button-secondary-pill: Ghost Action Blue pill -->
+            <a href="#kontak" class="inline-flex items-center justify-center bg-transparent border border-[#0066cc] text-[#0066cc] text-[17px] font-normal px-[22px] py-[11px] rounded-full active:scale-95 transition">
+              Hubungi Kami
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <!-- Product image with the single Apple system drop shadow -->
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEhJqkC0PlwMZyeUIVsHyiwyCMeoO3FAb8in1ZnVJWS05stEuVuUZN_9g&s=10"
+            alt="Preview Platform Hiburan FlipPlay"
+            class="w-full max-w-lg object-cover rounded-[18px] shadow-[3px_5px_30px_rgba(0,0,0,0.22)]"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Content Section (Parchment background alternating rhythm, Store Utility Cards 18px radius) -->
+    <section id="fitur" class="bg-[#f5f5f7] py-20 px-6 border-t border-[#e0e0e0]">
+      <div class="max-w-6xl mx-auto space-y-12">
+        <div class="text-center space-y-3 max-w-2xl mx-auto">
+          <h2 class="text-3xl lg:text-[40px] font-semibold text-[#1d1d1f] leading-[1.10] tracking-[-0.28px]">
+            Semua Hiburan Favoritmu dalam Satu Tempat
+          </h2>
+          <p class="text-[17px] text-[#7a7a7a] leading-[1.47] tracking-[-0.374px]">
+            Jelajahi koleksi terlengkap dari ribuan judul anime, drama Asia, manga, dan novel digital.
+          </p>
+        </div>
+
+        <!-- 3-column store-utility-card grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <article class="bg-white border border-[#e0e0e0] rounded-[18px] p-6 transition duration-200 hover:border-[#cccccc]">
+            <img
+              src="https://i.pinimg.com/736x/5d/7c/32/5d7c3234244ad48955c4ee98f5a59907.jpg"
+              alt="Anime Populer di FlipPlay"
+              class="w-full h-48 object-cover rounded-[8px] mb-6"
+              loading="lazy"
+            >
+            <h3 class="text-[17px] font-semibold text-[#1d1d1f] tracking-[-0.374px] mb-2">
+              Anime Populer
+            </h3>
+            <p class="text-[14px] text-[#7a7a7a] leading-[1.43] tracking-[-0.224px]">
+              Tonton anime terbaru dan klasik dengan kualitas HD serta subtitle resmi multibahasa.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-white border border-[#e0e0e0] rounded-[18px] p-6 transition duration-200 hover:border-[#cccccc]">
+            <img
+              src="https://i.pinimg.com/736x/ba/19/af/ba19afe8fd6aa94a94832eee83463f9b.jpg"
+              alt="Drama Asia di FlipPlay"
+              class="w-full h-48 object-cover rounded-[8px] mb-6"
+              loading="lazy"
+            >
+            <h3 class="text-[17px] font-semibold text-[#1d1d1f] tracking-[-0.374px] mb-2">
+              Drama Asia
+            </h3>
+            <p class="text-[14px] text-[#7a7a7a] leading-[1.43] tracking-[-0.224px]">
+              Koleksi drama dari berbagai negara dengan audio jernih dan subtitle lengkap.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-white border border-[#e0e0e0] rounded-[18px] p-6 transition duration-200 hover:border-[#cccccc]">
+            <img
+              src="https://i.pinimg.com/1200x/eb/fb/ed/ebfbed1aeb973d84ce3dbfcec413eece.jpg"
+              alt="Manga dan Light Novel di FlipPlay"
+              class="w-full h-48 object-cover rounded-[8px] mb-6"
+              loading="lazy"
+            >
+            <h3 class="text-[17px] font-semibold text-[#1d1d1f] tracking-[-0.374px] mb-2">
+              Manga & Light Novel
+            </h3>
+            <p class="text-[14px] text-[#7a7a7a] leading-[1.43] tracking-[-0.224px]">
+              Baca ribuan judul manga dan light novel secara legal dengan reader yang nyaman.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Contact Form Section (Clean canvas, pill inputs, 18px card container) -->
+    <section id="kontak" class="bg-white py-20 px-6 border-t border-[#e0e0e0]">
+      <div class="max-w-xl mx-auto bg-[#f5f5f7] border border-[#e0e0e0] rounded-[18px] p-8">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl sm:text-[34px] font-semibold text-[#1d1d1f] tracking-[-0.374px]">
+            Hubungi Kami
+          </h2>
+          <p class="text-[14px] text-[#7a7a7a] mt-2">
+            Ada pertanyaan atau ingin bermitra? Kirimkan pesan Anda kepada tim FlipPlay.
+          </p>
+        </div>
+
+        <form action="#" method="post" class="space-y-5">
+          <div>
+            <label for="nama" class="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
+              Nama Lengkap
+            </label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              required
+              placeholder="Masukkan nama Anda"
+              class="w-full h-11 px-5 bg-white border border-[#e0e0e0] rounded-full text-[17px] text-[#1d1d1f] placeholder-[#7a7a7a] focus:outline-none focus:ring-2 focus:ring-[#0071e3] focus:border-transparent transition"
+            >
+          </div>
+
+          <div>
+            <label for="email" class="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
+              Alamat Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="nama@email.com"
+              class="w-full h-11 px-5 bg-white border border-[#e0e0e0] rounded-full text-[17px] text-[#1d1d1f] placeholder-[#7a7a7a] focus:outline-none focus:ring-2 focus:ring-[#0071e3] focus:border-transparent transition"
+            >
+          </div>
+
+          <div>
+            <label for="pesan" class="block text-[14px] font-semibold text-[#1d1d1f] mb-2">
+              Pesan
+            </label>
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="4"
+              required
+              placeholder="Tuliskan pesan Anda di sini..."
+              class="w-full p-4 bg-white border border-[#e0e0e0] rounded-[18px] text-[17px] text-[#1d1d1f] placeholder-[#7a7a7a] focus:outline-none focus:ring-2 focus:ring-[#0071e3] focus:border-transparent resize-none transition"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full h-11 bg-[#0066cc] hover:bg-[#0071e3] text-white text-[17px] font-normal rounded-full active:scale-95 transition"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5. Footer (Parchment background, dense link typography, fine-print legal) -->
+  <footer class="bg-[#f5f5f7] border-t border-[#e0e0e0] py-16 text-center text-[12px] text-[#7a7a7a]">
+    <div class="max-w-6xl mx-auto px-6 space-y-3">
+      <p class="text-[14px] font-semibold text-[#333333]">FlipPlay Digital Entertainment</p>
+      <p>&copy; 2026 FlipPlay. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

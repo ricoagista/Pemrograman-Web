@@ -25,7 +25,7 @@ Pemrograman-Web/
 | Modul | Topik | Materi / File |
 |-------|-------|---------------|
 | [Modul 0](./modul_0/) | Setup | • `Modul 0 - Setup.pdf` |
-| [Modul 1](./modul_1/) | Fundamental Pemrograman Web Modern | • `Modul 1 - Fundamental Pemrograman Web Modern.pdf`<br>• [`Codelab/`](./modul_1/Codelab/) (`index.html`, assets) |
+| [Modul 1](./modul_1/) | Fundamental Pemrograman Web Modern | • `Modul 1 - Fundamental Pemrograman Web Modern.pdf`<br>• [`Codelab/`](./modul_1/Codelab/) (`index.html`, assets)<br>• [`Demo/`](./modul_1/Demo/) (`index.html`) |
 | [Modul 2](./modul_2/) | JavaScript Fundamentals & DOM Manipulation | • `Modul 2 - Javascript Fundamentals & DOM Manipulation.pdf` |
 | [Modul 3](./modul_3/) | PHP Prosedural & PHP OOP | • `Modul 3 - PHP Prosedural & PHP OOP.pdf` |
 | [Modul 4](./modul_4/) | Laravel REST API CRUD, Eloquent ORM & Relationship | • `Modul 4 - Laravel REST API CRUD, Eloquent ORM & Relationship.pdf` |
