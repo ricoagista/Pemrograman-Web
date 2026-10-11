@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Pengguna - Pemrograman Web</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Konfigurasi Tema -->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #2563eb;
+            --color-primary-dark: #1e40af;
+            --color-primary-light: #60a5fa;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="bg-primary text-white">
+        <nav class="max-w-6xl mx-auto px-6 py-4">
+
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="index.html" class="text-xl font-bold">
+                    Pemrograman Web
+                </a>
+
+                <!-- Tombol hamburger, hanya tampil di mobile -->
+                <button
+                    id="menu-toggle"
+                    class="md:hidden flex flex-col gap-1.5 p-2"
+                    aria-label="Buka menu navigasi"
+                    aria-expanded="false"
+                >
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                    <span class="block w-6 h-0.5 bg-white"></span>
+                </button>
+
+                <!-- Navigation: hidden di mobile, flex di desktop -->
+                <ul id="nav-menu" class="hidden md:flex gap-6 text-sm font-medium">
+
+                    <li>
+                        <a href="index.html" class="hover:text-primary-light">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#cards" class="hover:text-primary-light">
+                            Content
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#contact" class="hover:text-primary-light">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="api.html" class="hover:text-primary-light">
+                            API
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Menu mobile: muncul di bawah baris navbar saat toggle -->
+            <ul id="nav-menu-mobile" class="hidden flex-col gap-3 text-sm font-medium pt-4 md:hidden">
+
+                <li>
+                    <a href="index.html" class="hover:text-primary-light block">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#cards" class="hover:text-primary-light block">
+                        Content
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact" class="hover:text-primary-light block">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="api.html" class="hover:text-primary-light block">
+                        API
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             DATA PENGGUNA SECTION
+        ========================== -->
+        <section class="px-6 py-16">
+
+            <div class="max-w-6xl mx-auto">
+
+                <div class="text-center mb-10">
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Data Pengguna
+                    </h2>
+
+                </div>
+
+                <!-- Pesan loading (diisi oleh JS) -->
+                <p id="loading-message" class="text-center text-gray-500 mb-6"></p>
+
+                <!-- Pesan error (diisi oleh JS jika gagal) -->
+                <p id="error-message" class="text-center text-red-500 mb-6"></p>
+
+                <!-- Grid card pengguna (diisi oleh JS) -->
+                <div id="user-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-primary-dark text-white">
+
+        <div class="max-w-6xl mx-auto px-6 py-6 text-center">
+
+            <p>Made with <span class="heart">&hearts;</span> by 202410370110433 &copy; 2026</p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="api.js" defer></script>
+
+</body>
+
+</html>
