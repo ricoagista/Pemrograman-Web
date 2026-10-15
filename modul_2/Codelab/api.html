@@ -8,10 +8,10 @@
 
     <title>Data Pengguna - Pemrograman Web</title>
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Konfigurasi Tema -->
+    <!-- Tema -->
     <style type="text/tailwindcss">
         @theme {
             --color-primary: #2563eb;
@@ -23,20 +23,16 @@
 
 <body class="bg-gray-50 text-gray-900">
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
+        <!-- Navbar -->
     <header class="bg-primary text-white">
         <nav class="max-w-6xl mx-auto px-6 py-4">
 
             <div class="flex items-center justify-between">
 
-                <!-- Logo -->
                 <a href="index.html" class="text-xl font-bold">
                     Pemrograman Web
                 </a>
 
-                <!-- Tombol hamburger, hanya tampil di mobile -->
                 <button
                     id="menu-toggle"
                     class="md:hidden flex flex-col gap-1.5 p-2"
@@ -48,7 +44,6 @@
                     <span class="block w-6 h-0.5 bg-white"></span>
                 </button>
 
-                <!-- Navigation: hidden di mobile, flex di desktop -->
                 <ul id="nav-menu" class="hidden md:flex gap-6 text-sm font-medium">
 
                     <li>
@@ -79,7 +74,6 @@
 
             </div>
 
-            <!-- Menu mobile: muncul di bawah baris navbar saat toggle -->
             <ul id="nav-menu-mobile" class="hidden flex-col gap-3 text-sm font-medium pt-4 md:hidden">
 
                 <li>
@@ -114,9 +108,7 @@
 
     <main>
 
-        <!-- =========================
-             DATA PENGGUNA SECTION
-        ========================== -->
+           <!-- Data user -->
         <section class="px-6 py-16">
 
             <div class="max-w-6xl mx-auto">
@@ -129,13 +121,10 @@
 
                 </div>
 
-                <!-- Pesan loading (diisi oleh JS) -->
                 <p id="loading-message" class="text-center text-gray-500 mb-6"></p>
 
-                <!-- Pesan error (diisi oleh JS jika gagal) -->
                 <p id="error-message" class="text-center text-red-500 mb-6"></p>
 
-                <!-- Grid card pengguna (diisi oleh JS) -->
                 <div id="user-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
             </div>
@@ -145,9 +134,7 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+        <!-- Footer -->
     <footer class="bg-primary-dark text-white">
 
         <div class="max-w-6xl mx-auto px-6 py-6 text-center">

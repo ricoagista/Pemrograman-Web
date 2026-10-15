@@ -8,10 +8,10 @@
 
     <title>Pemrograman Web</title>
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Konfigurasi Tema -->
+    <!-- Tema -->
     <style type="text/tailwindcss">
         @theme {
             --color-primary: #2563eb;
@@ -23,20 +23,16 @@
 
 <body class="bg-gray-50 text-gray-900">
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
+        <!-- Navbar -->
     <header class="bg-primary text-white">
         <nav class="max-w-6xl mx-auto px-6 py-4">
 
             <div class="flex items-center justify-between">
 
-                <!-- Logo -->
                 <a href="#" class="text-xl font-bold">
                     Pemrograman Web
                 </a>
 
-                <!-- Tombol hamburger, hanya tampil di mobile -->
                 <button
                     id="menu-toggle"
                     class="md:hidden flex flex-col gap-1.5 p-2"
@@ -48,7 +44,6 @@
                     <span class="block w-6 h-0.5 bg-white"></span>
                 </button>
 
-                <!-- Navigation: hidden di mobile, flex di desktop -->
                 <ul id="nav-menu" class="hidden md:flex gap-6 text-sm font-medium">
 
                     <li>
@@ -79,7 +74,6 @@
 
             </div>
 
-            <!-- Menu mobile: muncul di bawah baris navbar saat toggle -->
             <ul id="nav-menu-mobile" class="hidden flex-col gap-3 text-sm font-medium pt-4 md:hidden">
 
                 <li>
@@ -114,9 +108,7 @@
 
     <main>
 
-        <!-- =========================
-             HERO SECTION
-        ========================== -->
+           <!-- Hero -->
         <section class="bg-blue-50 px-6 py-20">
 
             <div class="max-w-6xl mx-auto text-center">
@@ -141,9 +133,7 @@
         </section>
 
 
-        <!-- =========================
-             CONTENT SECTION
-        ========================== -->
+           <!-- Konten -->
         <section id="cards" class="px-6 py-16">
 
             <div class="max-w-6xl mx-auto">
@@ -157,13 +147,9 @@
                 </div>
 
 
-                <!-- CARD GRID -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
 
-                    <!-- =========================
-                         CARD 1
-                    ========================== -->
                     <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
 
                         <img
@@ -187,9 +173,6 @@
                     </article>
 
 
-                    <!-- =========================
-                         CARD 2
-                    ========================== -->
                     <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
 
                         <img
@@ -213,9 +196,6 @@
                     </article>
 
 
-                    <!-- =========================
-                         CARD 3
-                    ========================== -->
                     <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
 
                         <img
@@ -245,9 +225,7 @@
         </section>
 
 
-        <!-- =========================
-             CONTACT FORM
-        ========================== -->
+           <!-- Form kontak -->
         <section id="contact" class="bg-blue-50 px-6 py-16">
 
             <div class="max-w-xl mx-auto">
@@ -267,10 +245,8 @@
 
                 <form id="contact-form" class="bg-white rounded-xl shadow-md p-6">
 
-                    <!-- Pesan sukses (tersembunyi sampai form valid) -->
                     <p id="success-msg" class="hidden text-green-600 font-medium text-center mb-4"></p>
 
-                    <!-- Nama -->
                     <div class="mb-5">
 
                         <label
@@ -292,7 +268,6 @@
                     </div>
 
 
-                    <!-- Email -->
                     <div class="mb-5">
 
                         <label
@@ -314,7 +289,6 @@
                     </div>
 
 
-                    <!-- Pesan -->
                     <div class="mb-5">
 
                         <label
@@ -336,7 +310,6 @@
                     </div>
 
 
-                    <!-- Button -->
                     <button
                         type="submit"
                         class="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-primary-dark"
@@ -353,9 +326,7 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+        <!-- Footer -->
     <footer class="bg-primary-dark text-white">
 
         <div class="max-w-6xl mx-auto px-6 py-6 text-center">

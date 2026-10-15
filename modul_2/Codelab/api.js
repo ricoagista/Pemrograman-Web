@@ -1,6 +1,4 @@
-// =============================================
-// FETCH DATA PENGGUNA DARI PUBLIC API
-// =============================================
+// Ambil data user dari API
 
 const API_URL = "https://jsonplaceholder.typicode.com/users";
 
@@ -8,7 +6,6 @@ const loadingMessage = document.querySelector("#loading-message");
 const errorMessage = document.querySelector("#error-message");
 const userList = document.querySelector("#user-list");
 
-// Render semua user ke dalam grid card
 function renderUsers(users) {
     userList.innerHTML = users.map(function (user) {
         return `
@@ -22,16 +19,14 @@ function renderUsers(users) {
     }).join("");
 }
 
-// Ambil data dari API dengan async/await
+// Ambil data async
 async function getUsers() {
-    // Tampilkan pesan loading, kosongkan error
     loadingMessage.textContent = "Loading data...";
     errorMessage.textContent = "";
 
     try {
         const response = await fetch(API_URL);
 
-        // Jika server merespons dengan status error
         if (!response.ok) {
             throw new Error(`Gagal mengambil data (status ${response.status})`);
         }
@@ -40,15 +35,13 @@ async function getUsers() {
         renderUsers(users);
 
     } catch (error) {
-        // Tampilkan pesan error, kosongkan daftar user
         errorMessage.textContent = "Data gagal dimuat. Coba lagi nanti.";
         userList.innerHTML = "";
 
     } finally {
-        // Kosongkan loading message di semua kondisi
         loadingMessage.textContent = "";
     }
 }
 
-// Jalankan saat halaman dimuat
+// Jalan saat halaman siap
 getUsers();
