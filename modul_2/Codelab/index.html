@@ -1,344 +1,43 @@
+<!-- Codelab: Simple API Demo with jsonplaceholder -->
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="id" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Pemrograman Web</title>
-
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Tema -->
-    <style type="text/tailwindcss">
-        @theme {
-            --color-primary: #2563eb;
-            --color-primary-dark: #1e40af;
-            --color-primary-light: #60a5fa;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codelab - Simple API Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-
-<body class="bg-gray-50 text-gray-900">
-
-        <!-- Navbar -->
-    <header class="bg-primary text-white">
-        <nav class="max-w-6xl mx-auto px-6 py-4">
-
-            <div class="flex items-center justify-between">
-
-                <a href="#" class="text-xl font-bold">
-                    Pemrograman Web
-                </a>
-
-                <button
-                    id="menu-toggle"
-                    class="md:hidden flex flex-col gap-1.5 p-2"
-                    aria-label="Buka menu navigasi"
-                    aria-expanded="false"
-                >
-                    <span class="block w-6 h-0.5 bg-white"></span>
-                    <span class="block w-6 h-0.5 bg-white"></span>
-                    <span class="block w-6 h-0.5 bg-white"></span>
-                </button>
-
-                <ul id="nav-menu" class="hidden md:flex gap-6 text-sm font-medium">
-
-                    <li>
-                        <a href="#" class="hover:text-primary-light">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#cards" class="hover:text-primary-light">
-                            Content
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="hover:text-primary-light">
-                            Contact
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="api.html" target="_blank" class="hover:text-primary-light">
-                            API
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <ul id="nav-menu-mobile" class="hidden flex-col gap-3 text-sm font-medium pt-4 md:hidden">
-
-                <li>
-                    <a href="#" class="hover:text-primary-light block">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#cards" class="hover:text-primary-light block">
-                        Content
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact" class="hover:text-primary-light block">
-                        Contact
-                    </a>
-                </li>
-
-                <li>
-                    <a href="api.html" target="_blank" class="hover:text-primary-light block">
-                        API
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-    </header>
-
-
-    <main>
-
-           <!-- Hero -->
-        <section class="bg-blue-50 px-6 py-20">
-
-            <div class="max-w-6xl mx-auto text-center">
-
-                <h1 class="text-4xl md:text-5xl font-bold text-primary-dark mb-6">
-                    Cara merubah gemini flash menjadi claude opus
-                </h1>
-
-                <p class="max-w-2xl mx-auto text-gray-600 text-lg mb-8">
-                    Jarvis tolong kerjakan codelab dari modul yang saya kirim, jangan terlihat seperti buatan AI.
-                </p>
-
-                <a
-                    href="#cards"
-                    class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark"
-                >
-                    Explore Content
-                </a>
-
-            </div>
-
-        </section>
-
-
-           <!-- Konten -->
-        <section id="cards" class="px-6 py-16">
-
-            <div class="max-w-6xl mx-auto">
-
-                <div class="text-center mb-10">
-
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
-                        Our Content
-                    </h2>
-
-                </div>
-
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-
-                    <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
-
-                        <img
-                            src="./1.jpg"
-                            alt="Web Development"
-                            class="w-full h-auto object-cover"
-                        >
-
-                        <div class="p-6">
-
-                            <h3 class="text-xl font-bold text-primary-dark mb-3">
-                                MBG (My Bini Gweh)
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                Nama asli Eina (A-Na) dari Hearts2Hearts adalah Erin Simanjuntak, Hangeul: 에린 시만준탁).
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
-
-                        <img
-                            src="./2.jpg"
-                            alt="Programming"
-                            class="w-full h-auto object-cover"
-                        >
-
-                        <div class="p-6">
-
-                            <h3 class="text-xl font-bold text-primary-dark mb-3">
-                                keliatan bgt tuh karbitnya 🤭
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                Yuha dan A-na.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
-
-                        <img
-                            src="./3.jpg"
-                            alt="Modern Technology"
-                            class="w-full h-48 object-cover"
-                        >
-
-                        <div class="p-6">
-
-                            <h3 class="text-xl font-bold text-primary-dark mb-3">
-                                pergi kau suki😾
-                            </h3>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                Istilah Meme Jomok yang menjadi ejekan bagi orang FOMO dan tidak memahami konteks komunitas.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-           <!-- Form kontak -->
-        <section id="contact" class="bg-blue-50 px-6 py-16">
-
-            <div class="max-w-xl mx-auto">
-
-                <div class="text-center mb-8">
-
-                    <h2 class="text-3xl font-bold text-primary-dark mb-3">
-                        Contact Us
-                    </h2>
-
-                    <p class="text-gray-600">
-                        Kirim pesan melalui form berikut.
-                    </p>
-
-                </div>
-
-
-                <form id="contact-form" class="bg-white rounded-xl shadow-md p-6">
-
-                    <p id="success-msg" class="hidden text-green-600 font-medium text-center mb-4"></p>
-
-                    <div class="mb-5">
-
-                        <label
-                            for="name"
-                            class="block text-sm font-medium mb-2"
-                        >
-                            Nama
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="Masukkan nama"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
-                        >
-
-                        <p id="error-name" class="text-red-500 text-xs mt-1"></p>
-
-                    </div>
-
-
-                    <div class="mb-5">
-
-                        <label
-                            for="email"
-                            class="block text-sm font-medium mb-2"
-                        >
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="Masukkan email"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
-                        >
-
-                        <p id="error-email" class="text-red-500 text-xs mt-1"></p>
-
-                    </div>
-
-
-                    <div class="mb-5">
-
-                        <label
-                            for="message"
-                            class="block text-sm font-medium mb-2"
-                        >
-                            Pesan
-                        </label>
-
-                        <textarea
-                            id="message"
-                            rows="4"
-                            placeholder="Masukkan pesan"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
-                        ></textarea>
-
-                        <p id="error-message" class="text-red-500 text-xs mt-1"></p>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-primary-dark"
-                    >
-                        Jangan Kirim Pesan
-                    </button>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-        <!-- Footer -->
-    <footer class="bg-primary-dark text-white">
-
-        <div class="max-w-6xl mx-auto px-6 py-6 text-center">
-
-             <p>Made with <span class="heart">&hearts;</span> by 202410370110433 &copy; 2026</p>
-
-        </div>
-
-    </footer>
-
-    <script src="script.js" defer></script>
-
+<body class="bg-white text-[#1d1d1f] font-['SF_Pro_Text',system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',Roboto,sans-serif] antialiased min-h-screen flex flex-col">
+  <header class="sticky top-0 z-50 bg-[#000000]/90 backdrop-blur-md border-b border-[#333333]">
+    <nav class="max-w-6xl mx-auto px-6 h-11 flex items-center justify-between">
+      <a href="#demo" class="text-[14px] font-semibold tracking-tight text-white hover:text-[#cccccc] transition">Codelab</a>
+      <div class="flex items-center gap-8 text-[12px] text-[#cccccc]">
+        <a href="#results" class="hover:text-white transition">Hasil</a>
+        <a href="#cards" class="hover:text-white transition">Card</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-1">
+    <!-- Results Section -->
+    <section id="results" class="py-12">
+      <h2 class="text-2xl sm:text-[34px] font-semibold text-[#1d1d1f] tracking-[-0.28px] mb-6">Hasil Data</h2>
+      <div id="results-container">
+        <!-- Results will be injected here -->
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="py-12">
+      <h2 class="text-2xl sm:text-[34px] font-semibold text-[#1d1d1f] tracking-[-0.28px] mb-6">Card Template</h2>
+      <div id="cards-container">
+        <!-- Cards will be injected here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#f5f5f7] border-t border-[#e0e0e0] py-6 text-center text-[12px] text-[#7a7a7a]">
+    <p>Codelab - Demonstrasi Fetch API Sederhana</p>
+  </footer>
 </body>
-
 </html>
