@@ -1,6 +1,3 @@
-// The Vibe Grid - logika pencarian dan filter berbasis aura.
-// Sumber data: Studio Ghibli API (publik, tanpa API key).
-
 // Simpan hasil fetch di variabel global agar tidak perlu fetch ulang saat filter berubah.
 let filmsData = [];
 let activeAura = "Semua";
