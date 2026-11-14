@@ -27,7 +27,7 @@ Pemrograman-Web/
 | [Modul 0](./modul_0/) | Setup | • `Modul 0 - Setup.pdf` |
 | [Modul 1](./modul_1/) | Fundamental Pemrograman Web Modern | • `Modul 1 - Fundamental Pemrograman Web Modern.pdf`<br>• [`Codelab/`](./modul_1/Codelab/) (`index.html`, assets)<br>• [`Demo/`](./modul_1/Demo/) (`index.html`) |
 | [Modul 2](./modul_2/) | JavaScript Fundamentals & DOM Manipulation | • `Modul 2 - Javascript Fundamentals & DOM Manipulation.pdf`<br>• [`Codelab/`](./modul_2/Codelab/) (`index.html`, `script.js`, `codelab.js`, `api.html`, `api.js`)<br>• [`Demo/`](./modul_2/Demo/) (`index.html`, `script.js`) |
-| [Modul 3](./modul_3/) | PHP Prosedural & PHP OOP | • `Modul 3 - PHP Prosedural & PHP OOP.pdf`<br>• [`Codelab/`](./modul_3/Codelab/) (`index.php`, `src/` — class `Book`, `Library`, `Member`) |
+| [Modul 3](./modul_3/) | PHP Prosedural & PHP OOP | • `Modul 3 - PHP Prosedural & PHP OOP.pdf`<br>• [`Codelab/`](./modul_3/Codelab/) (`index.php`, `src/` — class `Book`, `Library`, `Member`)<br>• [`Demo/`](./modul_3/Demo/) (`index.php`, `src/` — class `Media`, `Anime`, `Manga`, `Library`) |
 | [Modul 4](./modul_4/) | Laravel REST API CRUD, Eloquent ORM & Relationship | • `Modul 4 - Laravel REST API CRUD, Eloquent ORM & Relationship.pdf` |
 | [Modul 5](./modul_5/) | Autentikasi, Middleware & File Storage | • `Modul 5 - Autentikasi, Middleware & File Storage.pdf` |
 | [Modul 6](./modul_6/) | Integrasi Frontend, Dokumentasi & Deployment | • `Modul 6 - Integrasi Frontend, Dokumentasi & Deployment.pdf` |
